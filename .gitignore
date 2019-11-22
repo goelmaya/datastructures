@@ -9,7 +9,6 @@
 *.rdb
 *capfile
 *gradle*
-~
 .idea
 .gradle
 .project
