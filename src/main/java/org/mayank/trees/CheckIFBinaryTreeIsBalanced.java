@@ -18,19 +18,19 @@ public class CheckIFBinaryTreeIsBalanced {
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        TreeNode rootLeft = new TreeNode(2);
-        TreeNode rootRight = new TreeNode(2);
+        TreeNode<Integer> root = new TreeNode(1);
+        TreeNode<Integer> rootLeft = new TreeNode(2);
+        TreeNode<Integer> rootRight = new TreeNode(2);
         root.left = rootLeft;
         root.right = rootRight;
 
-        TreeNode rootLeftLeft = new TreeNode(3);
-        TreeNode rootLeftRight = new TreeNode(3);
+        TreeNode<Integer> rootLeftLeft = new TreeNode(3);
+        TreeNode<Integer> rootLeftRight = new TreeNode(3);
         rootLeft.left = rootLeftLeft;
         rootLeft.right = rootLeftRight;
 
-        TreeNode rootLeftLeftLeft = new TreeNode(4);
-        TreeNode rootLeftLeftRight = new TreeNode(4);
+        TreeNode<Integer> rootLeftLeftLeft = new TreeNode(4);
+        TreeNode<Integer> rootLeftLeftRight = new TreeNode(4);
         rootLeftLeft.left = rootLeftLeftLeft;
         rootLeftLeft.right = rootLeftLeftRight;
         System.out.println("The Binary tree is balanced==" + CheckIFBinaryTreeIsBalanced.isBalanced(root));
